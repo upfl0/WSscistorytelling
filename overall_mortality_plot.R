@@ -32,15 +32,16 @@ IN$parent <- c("total",
 
 IN <- IN %>% gather(key = "delete", value = "deaths", -V2, -parent) %>% group_by(V2) %>% summarise(deaths_total = sum(deaths, na.rm = TRUE), parent = first(parent)) %>% ungroup()
 
-IN <- IN %>% filter(!str_detect(V2, "Insgesamt|Insgesamt|Neubildungen|Krankheiten des Kreislaufsystems|Krankheiten des Atmungssystems|Fehlbildungen,Deformitäten|Äußere Ursachen von Morbidität und Mortalität"))
+IN <- IN %>% filter(!str_detect(V2, "Insgesamt|Neubildungen|Krankheiten des Kreislaufsystems|Krankheiten des Atmungssystems|Fehlbildungen,Deformitäten|Äußere Ursachen von Morbidität und Mortalität|BN d. Larynx, d. Trachea, d. Bronchien u. d. Lunge|BN der Genital- und Harnorgane|BN der Leber, der Gallenwege und des Pankreas|Krankheiten der Niere|Alkoh.Leberkh."))
 
+sum(IN$deaths_total)
 
 treemap <- ggplot(data = IN, aes(area = deaths_total, fill = parent, subgroup = parent, label = V2)) + 
   geom_treemap(size = 1) +
   #geom_treemap_subgroup_border(colour = "black", alpha = 0.5, size = 2)+
   geom_treemap_text(colour = "white", place = "topleft", reflow = T) +
   geom_treemap_subgroup_text(place = "bottomleft", grow = T, alpha = 0.5, colour =
-                               "black", fontface = "italic", min.size = 0, padding.x = grid::unit(5,"mm"), padding.y = grid::unit(5,"mm")) +
+                               "black", min.size = 0, padding.x = grid::unit(5,"mm"), padding.y = grid::unit(5,"mm")) +
   guides(fill = FALSE)
 treemap
 ggsave(treemap, filename = "treemap.png", device = "png", width = 20, height = 12, units = "cm")
