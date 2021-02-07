@@ -1,0 +1,11 @@
+Letzte Aktualisierung: 17.12.2019
+Mortalität, Rohe Rate in Deutschland pro 100.000 Einwohner
+Gewählte Filter:
+Altersgruppen: 0 - 85+
+Diagnose: Mundhöhle und Rachen (C00-C14), Speiseröhre (C15), Magen (C16), Dünndarm (C17), Darm (C18-C20), Anus u. Analkanal (C21), Leber (C22), Gallenblase und Gallenwege (C23-C24), Bauchspeicheldrüse (C25), Lunge (C33-C34), Knochen u. Gelenkknorpel (C40-C41), Malignes Melanom der Haut (C43), Weichteile u. mesotheliales Gewebe (C45-C49), Brustdrüse (C50), Vulva (C51), Vagina (C52), Gebärmutterhals (C53), Gebärmutterkörper (C54-C55), Eierstöcke (C56), Plazenta (C58), Penis (C60), Prostata (C61), Hoden (C62), Niere (C64), Harnblase (C67), Auge, Gehirn u. Zentrales Nervensystem (C69-C72), Schilddrüse (C73), Nebenniere (C74), Morbus Hodgkin (C81), Non-Hodgkin-Lymphome (C82-C88), Multiples Myelom (C90), Leukämien (C91-C95)
+Geschlecht: männlich, weiblich
+Jahre: 1999 - 2016
+* : Keine sinnvolle Auswertung möglich aufgrund zu geringer Fallzahlen.
+x : Keine sinnvolle Kombination, beispielsweise bei einer geschlechtsspezifischen Diagnose.
+<5 : Es sind weniger als 5 Fälle registriert. Aus Datenschutzgründen wird die genaue Anzahl nicht publiziert.
+Zitierempfehlung: "Zentrum für Krebsregisterdaten im Robert Koch-Institut: Datenbankabfrage mit Schätzung der Inzidenz, Prävalenz und des Überlebens von Krebs in Deutschland auf Basis der epidemiologischen Landeskrebsregisterdaten (DOI: 10.18444/5.03.01.0005.0014.0001). Mortalitätsdaten bereitgestellt vom Statistischen Bundesamt. www.krebsdaten.de/abfrage, Letzte Aktualisierung: 17.12.2019, Abrufdatum: (Datum der Abfrage)"
